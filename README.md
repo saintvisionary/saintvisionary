@@ -8,8 +8,7 @@
 
 *I secure AI agents, and I use AI agents to secure identity.*
 
-<!-- Replace the # with your LinkedIn URL -->
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-0A66C2?style=flat-square)](#)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-0A66C2?style=flat-square)](https://www.linkedin.com/in/tyler-bynum-838b8132b)
 [![Featured](https://img.shields.io/badge/featured-AI_Agent_Spend_Gate-FF9900?style=flat-square)](https://github.com/saintvisionary/AI-Agent-Spend-Gate)
 
 </div>
