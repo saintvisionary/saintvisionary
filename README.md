@@ -22,17 +22,6 @@
 - I build controls, then attack them. Every bypass I find goes into a journal along with how I fixed it.
 - I'm starting an **MS in Cybersecurity at Georgia Tech** in January 2027.
 
-### 💼 Business first, then tooling
-
-A control only matters if it protects something the business cares about. Before I build, I ask:
-
-- **What's at stake?** Money moving, patient records, customer trust, an audit finding.
-- **Who owns the risk?** Every identity, human or agent, needs an accountable owner.
-- **What does the regulator or auditor need to see?** Separation of duties, four-eyes approval, evidence that holds up.
-- **What does it cost the people doing the work?** Security that slows everyone down gets routed around.
-
-Then I pick the tool. That's why my projects start with a one-page problem brief, not a tech stack.
-
 ### 🔑 Security principles, applied
 
 | Principle | Where it shows up in my work |
@@ -77,15 +66,6 @@ flowchart LR
 - **I break my own controls.** The [build journal](https://github.com/saintvisionary/AI-Agent-Spend-Gate/blob/main/JOURNAL.md) records every bypass I found, like a `nan` amount that slipped past every rule, and how I fixed it.
 
 ---
-
-### 🗺️ What I'm building next
-
-| Project | The business problem | Stack |
-|:---|:---|:---|
-| **Seasonal Workforce Access** | Stadiums and hospitals onboard and offboard waves of temp staff. Access has to start and end on time, with proof. | Microsoft Entra ID, Terraform, GitHub Actions (OIDC) |
-| **AI Control Auditor** | Identity controls get tested once a year by hand. An agent tests them nightly and a human signs off. | Python, LLM evidence summaries, Splunk |
-| **Minimum Necessary** | Staff open patient records with no care reason. Find it, triage it, prove it. | Palantir Foundry (Ontology, Pipeline Builder, AIP), Cipher |
-| **NHI Hygiene Scanner** | Old keys and over-permissioned roles that can move money. | AWS IAM, boto3, Python |
 
 ### 🧰 Toolbox
 
