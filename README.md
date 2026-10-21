@@ -17,13 +17,23 @@
 
 ### 🛡️ About me
 
-- I work in **physical security and access control** (C•CURE 9000): badges, readers, door schedules, and who gets in where.
+- I work in **physical security and access control** (C•CURE 9000): badges, readers, door schedules, and who gets in where. Every joiner, mover and leaver across multiple NFL facilities runs through me.
 - I'm moving into **IAM / identity engineering**. The job is the same. The doors are now APIs, and many of the people walking through them are agents.
 - My focus is **non-human identity**: giving AI agents their own identity, a human owner, least privilege, approval for risky actions, and a full audit trail.
+- I'm starting an **MS in Cybersecurity at Georgia Tech** in January 2027.
+
+### 💼 Business first, then tooling
+
+A control only matters if it protects something the business cares about. Before I build, I ask:
+
+- **What's at stake?** Money moving, patient records, customer trust, an audit finding.
+- **Who owns the risk?** Every identity, human or agent, needs an accountable owner.
+- **What does the regulator or auditor need to see?** Separation of duties, four-eyes approval, evidence that holds up.
+- **What does it cost the people doing the work?** Security that slows everyone down gets routed around.
+
+Then I pick the tool. That's why my projects start with a one-page problem brief, not a tech stack.
 
 ### 🔑 Same controls, new doors
-
-Everything I know from the physical side has an identity equivalent:
 
 | Physical access control | Identity engineering |
 |:---|:---|
@@ -60,29 +70,52 @@ flowchart LR
 ```
 
 - **Three layers of control.** The LLM proposes, Strands Decider 2B checks honesty (grounded, injected, mislabeled), and a deny-by-default rules engine decides permission.
-- **Built for prompt injection.** A poisoned note in a tool result tries to buy gift cards. The guardrail denies it before the tool runs, and the rules would block it anyway.
+- **Models can add friction, never approve.** Only the deterministic rules, or a human, can say yes to spending money.
+- **Built for prompt injection.** A poisoned note in a tool result tells the agent to buy $450 of gift cards and file them as office supplies. The rules alone would approve that lie. The guardrail catches it and denies it before the tool runs.
 - **Calibrated confidence.** Uncertain calls go to a human, not to a guess.
 - **Reusable `#guardrails` pattern** that works with any Strands agent.
+- **I break my own controls.** The [build journal](https://github.com/saintvisionary/AI-Agent-Spend-Gate/blob/main/JOURNAL.md) records every bypass I found, like a `nan` amount that slipped past every rule, and how I fixed it.
 
 ---
 
+### 🗺️ What I'm building next
+
+| Project | The business problem | Stack |
+|:---|:---|:---|
+| **Seasonal Workforce Access** | Stadiums and hospitals onboard and offboard waves of temp staff. Access has to start and end on time, with proof. | Microsoft Entra ID, Terraform, GitHub Actions (OIDC) |
+| **AI Control Auditor** | Identity controls get tested once a year by hand. An agent tests them nightly and a human signs off. | Python, LLM evidence summaries, Splunk |
+| **Minimum Necessary** | Staff open patient records with no care reason. Find it, triage it, prove it. | Palantir Foundry (Ontology, Pipeline Builder, AIP), Cipher |
+| **NHI Hygiene Scanner** | Old keys and over-permissioned roles that can move money. | AWS IAM, boto3, Python |
+
 ### 🧰 Toolbox
+
+**Working with**
 
 <p>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
 <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" />
 <img src="https://img.shields.io/badge/Amazon_Bedrock-01A88D?style=for-the-badge" alt="Amazon Bedrock" />
 <img src="https://img.shields.io/badge/Strands_Agents-FF9900?style=for-the-badge" alt="Strands Agents" />
-<img src="https://img.shields.io/badge/AWS_IAM-DD344C?style=for-the-badge" alt="AWS IAM" />
 <img src="https://img.shields.io/badge/Microsoft_Entra_ID-0078D4?style=for-the-badge" alt="Microsoft Entra ID" />
 <img src="https://img.shields.io/badge/Splunk-000000?style=for-the-badge&logo=splunk&logoColor=white" alt="Splunk" />
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+</p>
+
+**Learning now**
+
+<p>
+<img src="https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform" />
+<img src="https://img.shields.io/badge/Palantir_Foundry-101113?style=for-the-badge" alt="Palantir Foundry" />
+<img src="https://img.shields.io/badge/AWS_IAM-DD344C?style=for-the-badge" alt="AWS IAM" />
+<img src="https://img.shields.io/badge/Okta-007DC1?style=for-the-badge&logo=okta&logoColor=white" alt="Okta" />
+<img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white" alt="PowerShell" />
 </p>
 
 ### 📜 Certifications
 
 ![Security+](https://img.shields.io/badge/CompTIA-Security%2B-C8202F?style=flat-square)
 ![GSEC](https://img.shields.io/badge/GIAC-GSEC-1B365D?style=flat-square)
+![GFACT](https://img.shields.io/badge/GIAC-GFACT-1B365D?style=flat-square)
 ![GCIH](https://img.shields.io/badge/GIAC-GCIH_(in_progress)-6E7781?style=flat-square)
 ![SC-300](https://img.shields.io/badge/Microsoft-SC--300_(in_progress)-6E7781?style=flat-square)
 
