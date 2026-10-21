@@ -2,9 +2,9 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=3200&pause=900&color=FF9900&center=true&vCenter=true&width=640&lines=Hi%2C+I'm+Tyler+%F0%9F%91%8B;I+secured+doors.+Now+I+secure+identities.;Humans%2C+machines%2C+and+AI+agents." alt="Hi, I'm Tyler. I secured doors. Now I secure identities." />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=3200&pause=900&color=FF9900&center=true&vCenter=true&width=640&lines=Hi%2C+I'm+Tyler+%F0%9F%91%8B;Identity+is+the+new+perimeter.;Securing+humans%2C+machines%2C+and+AI+agents." alt="Hi, I'm Tyler. Identity is the new perimeter. Securing humans, machines, and AI agents." />
 
-**Access control → Identity engineering**
+**Identity & Access Management · AI Agent Security · Security Operations**
 
 *I secure AI agents, and I use AI agents to secure identity.*
 
@@ -17,9 +17,9 @@
 
 ### 🛡️ About me
 
-- I work in **physical security and access control** (C•CURE 9000): badges, readers, door schedules, and who gets in where. Every joiner, mover and leaver across multiple NFL facilities runs through me.
-- I'm moving into **IAM / identity engineering**. The job is the same. The doors are now APIs, and many of the people walking through them are agents.
-- My focus is **non-human identity**: giving AI agents their own identity, a human owner, least privilege, approval for risky actions, and a full audit trail.
+- I'm a security practitioner focused on **identity**: who and what gets access, to what, for how long, and how you prove it to an auditor.
+- My focus is **non-human identity**: giving AI agents and service accounts their own identity, a human owner, least privilege, approval for risky actions, and a full audit trail.
+- I build controls, then attack them. Every bypass I find goes into a journal along with how I fixed it.
 - I'm starting an **MS in Cybersecurity at Georgia Tech** in January 2027.
 
 ### 💼 Business first, then tooling
@@ -33,18 +33,18 @@ A control only matters if it protects something the business cares about. Before
 
 Then I pick the tool. That's why my projects start with a one-page problem brief, not a tech stack.
 
-### 🔑 Same controls, new doors
+### 🔑 Security principles, applied
 
-| Physical access control | Identity engineering |
+| Principle | Where it shows up in my work |
 |:---|:---|
-| Badge | Credential / token |
-| Card reader | Policy enforcement point |
-| Access panel | Policy decision point |
-| Clearance and door groups | Roles and permission sets |
-| Door schedules | Conditional access |
-| Two-person rule | Human-in-the-loop approval |
-| Deactivate the badge on the last day | Deprovisioning (joiner-mover-leaver) |
-| Event log and alarm monitoring | Audit log → SIEM |
+| **Least privilege** | The agent's AWS IAM policy can invoke one model and nothing else |
+| **Separation of duties** | The AI agent proposes a purchase; a separate policy engine decides |
+| **Zero trust for inputs** | LLM output and tool results are treated as untrusted, even from internal feeds |
+| **Defense in depth** | Three independent layers: the agent, a Decider 2B guardrail, deterministic rules |
+| **Fail closed** | Deny by default: unknown vendors, unknown categories and malformed amounts are blocked |
+| **Threat modeling** | Prompt injection and excessive agency ([OWASP LLM Top 10](https://genai.owasp.org/llm-top-10/)), business email compromise |
+| **Detection & response** | Every guardrail verdict is recorded with a reason and confidence scores, so it can be sent to a SIEM |
+| **Adversarial testing** | Found and fixed bypasses: `NaN`, `true`, and fraction-of-a-cent amounts |
 
 ---
 
