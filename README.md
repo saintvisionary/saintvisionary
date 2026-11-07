@@ -45,7 +45,7 @@
 <div align="center">
 
 <a href="https://github.com/saintvisionary/AI-Agent-Spend-Gate">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=saintvisionary&repo=AI-Agent-Spend-Gate&theme=transparent&title_color=FF9900&icon_color=FF9900&hide_border=true" alt="AI Agent Spend Gate" />
+  <img src="assets/card-ai-agent-spend-gate.svg" alt="AI Agent Spend Gate" />
 </a>
 
 </div>
@@ -73,7 +73,7 @@ flowchart LR
 <div align="center">
 
 <a href="https://github.com/saintvisionary/CareMap">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=saintvisionary&repo=CareMap&theme=transparent&title_color=30D158&icon_color=30D158&hide_border=true" alt="CareMap" />
+  <img src="assets/card-caremap.svg" alt="CareMap" />
 </a>
 
 </div>
