@@ -10,6 +10,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-0A66C2?style=flat-square)](https://www.linkedin.com/in/tyler-bynum-838b8132b)
 [![Featured](https://img.shields.io/badge/featured-AI_Agent_Spend_Gate-FF9900?style=flat-square)](https://github.com/saintvisionary/AI-Agent-Spend-Gate)
+[![Featured](https://img.shields.io/badge/featured-CareMap-30D158?style=flat-square)](https://github.com/saintvisionary/CareMap)
 
 </div>
 
@@ -34,10 +35,12 @@
 | **Threat modeling** | Prompt injection and excessive agency ([OWASP LLM Top 10](https://genai.owasp.org/llm-top-10/)), business email compromise |
 | **Detection & response** | Every guardrail verdict is recorded with a reason and confidence scores, so it can be sent to a SIEM |
 | **Adversarial testing** | Found and fixed bypasses: `NaN`, `true`, and fraction-of-a-cent amounts |
+| **Data minimization** | CareMap works out eligibility in the browser; the AI agent sees a tier percentage, never a salary |
+| **Output integrity** | Every dollar figure an AI reply states must match a tool result, or the reply is forced to rewrite |
 
 ---
 
-### 🚀 Featured project
+### 🚀 Featured projects
 
 <div align="center">
 
@@ -65,6 +68,34 @@ flowchart LR
 - **Reusable `#guardrails` pattern** that works with any Strands agent.
 - **I break my own controls.** The [build journal](https://github.com/saintvisionary/AI-Agent-Spend-Gate/blob/main/JOURNAL.md) records every bypass I found, like a `nan` amount that slipped past every rule, and how I fixed it.
 
+#### 🗺️ CareMap
+
+<div align="center">
+
+<a href="https://github.com/saintvisionary/CareMap">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=saintvisionary&repo=CareMap&theme=transparent&title_color=30D158&icon_color=30D158&hide_border=true" alt="CareMap" />
+</a>
+
+</div>
+
+**[CareMap](https://github.com/saintvisionary/CareMap):** *what care would cost you, before the bill.* A map of 4,500+ US hospitals and 11,200 sliding-fee clinics, priced for you under the charity-care law that applies where you live, with the math shown. 17 state laws modeled, each encoded from the statute with its citation.
+
+```mermaid
+flowchart LR
+    U["👤 You<br/>ZIP, household, income"] --> B["🔒 Browser<br/>poverty-line math,<br/>state rule"]
+    B -- "tier % only" --> A["🤖 Strands agent<br/>AWS Lambda"]
+    A --> T["🧾 Tools<br/>CMS + state law"]
+    T --> G["🛂 Grounding guard<br/><i>every $ from a tool?</i>"]
+    G -. "no: rewrite" .-> A
+    G --> R["💬 Reply + map"]
+```
+
+- **Privacy by design.** Household size and income are redacted in the browser before any network call; the agent only ever sees a tier and a ZIP.
+- **AI output is untrusted.** Strands hooks keep a ledger of every number a tool returned; a reply that states a figure not in the ledger is sent back to be rewritten.
+- **Works without the AI.** The map, prices and law math run client-side, so the app keeps working when the model is down or out of quota.
+- **Hardened endpoint.** The Lambda Function URL has a CORS allow-list, a max message length and a per-IP rate limit.
+- **Tested and accessible.** 240 tests (Python and TypeScript) and an automated WCAG 2.2 AA audit.
+
 ---
 
 ### 🧰 Toolbox
@@ -73,8 +104,11 @@ flowchart LR
 
 <p>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
 <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" />
 <img src="https://img.shields.io/badge/Amazon_Bedrock-01A88D?style=for-the-badge" alt="Amazon Bedrock" />
+<img src="https://img.shields.io/badge/AWS_Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white" alt="AWS Lambda" />
 <img src="https://img.shields.io/badge/Strands_Agents-FF9900?style=for-the-badge" alt="Strands Agents" />
 <img src="https://img.shields.io/badge/Microsoft_Entra_ID-0078D4?style=for-the-badge" alt="Microsoft Entra ID" />
 <img src="https://img.shields.io/badge/Splunk-000000?style=for-the-badge&logo=splunk&logoColor=white" alt="Splunk" />
