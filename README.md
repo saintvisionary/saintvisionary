@@ -64,7 +64,7 @@ flowchart LR
 - **AI output is untrusted.** Strands hooks keep a ledger of every number a tool returned; a reply that states a figure not in the ledger is sent back to be rewritten.
 - **Works without the AI.** The map, prices and law math run client-side, so the app keeps working when the model is down or out of quota.
 - **Hardened endpoint.** The Lambda Function URL has a CORS allow-list, a max message length and a per-IP rate limit.
-- **Tested and accessible.** 255 tests (Python and TypeScript) and an automated WCAG 2.2 AA audit.
+- **Tested and accessible.** 262 tests (Python and TypeScript) and an automated WCAG 2.2 AA audit.
 
 </details>
 
