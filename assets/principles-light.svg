@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" role="img" aria-label="Least privilege. Fail closed. AI output is untrusted. Data stays home.">
+<style>
+.chip{fill:#ffffff;stroke:#d0d8e8;stroke-width:1.2}
+.lit{fill:none;stroke:#C25E00;stroke-width:1.6;opacity:0;animation:lit 3.6s ease-in-out infinite}
+.ic{fill:none;stroke:#56627c;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;animation:ic 3.6s ease-in-out infinite}
+.tt{font:700 13px ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.12em;fill:#0b1220}
+.ss{font:400 13px ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Helvetica,Arial,sans-serif;fill:#56627c}
+@keyframes lit{0%,100%{opacity:0}12%,30%{opacity:1}45%{opacity:0}}
+@keyframes ic{0%,100%{stroke:#56627c}12%,30%{stroke:#C25E00}45%{stroke:#56627c}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style><g transform="translate(24.0 22)">
+  <rect width="276" height="76" rx="18" class="chip"/>
+  <rect width="276" height="76" rx="18" class="lit" style="animation-delay:0.0s"/>
+  <g transform="translate(34 38)" class="ic" style="animation-delay:0.0s"><rect x="-8" y="-2" width="16" height="12" rx="3"/><path d="M-5 -2 V-6 a5 5 0 0 1 10 0 V-2"/></g>
+  <text x="62" y="35" class="tt">LEAST PRIVILEGE</text><text x="62" y="56" class="ss">one model, nothing else</text></g><g transform="translate(316.0 22)">
+  <rect width="276" height="76" rx="18" class="chip"/>
+  <rect width="276" height="76" rx="18" class="lit" style="animation-delay:0.9s"/>
+  <g transform="translate(34 38)" class="ic" style="animation-delay:0.9s"><path d="M0 -11 L9 -7 V0 C9 6 5 10 0 12 C-5 10 -9 6 -9 0 V-7 Z"/><path d="M-4 0 L4 0"/></g>
+  <text x="62" y="35" class="tt">FAIL CLOSED</text><text x="62" y="56" class="ss">unknown means no</text></g><g transform="translate(608.0 22)">
+  <rect width="276" height="76" rx="18" class="chip"/>
+  <rect width="276" height="76" rx="18" class="lit" style="animation-delay:1.8s"/>
+  <g transform="translate(34 38)" class="ic" style="animation-delay:1.8s"><path d="M-11 0 C-7 -7 7 -7 11 0 C7 7 -7 7 -11 0 Z"/><circle cx="0" cy="0" r="3"/></g>
+  <text x="62" y="35" class="tt">AI OUTPUT IS UNTRUSTED</text><text x="62" y="56" class="ss">every claim is checked</text></g><g transform="translate(900.0 22)">
+  <rect width="276" height="76" rx="18" class="chip"/>
+  <rect width="276" height="76" rx="18" class="lit" style="animation-delay:2.7s"/>
+  <g transform="translate(34 38)" class="ic" style="animation-delay:2.7s"><path d="M-10 -1 L0 -10 L10 -1"/><path d="M-7 -3 V9 H7 V-3"/></g>
+  <text x="62" y="35" class="tt">DATA STAYS HOME</text><text x="62" y="56" class="ss">the AI never sees a salary</text></g></svg>
