@@ -38,34 +38,6 @@ flowchart LR
 - **Reusable `#guardrails` pattern** that works with any Strands agent.
 - **I break my own controls.** The [build journal](https://github.com/saintvisionary/AI-Agent-Spend-Gate/blob/main/JOURNAL.md) records every bypass I found, like a `nan` amount that slipped past every rule, and how I fixed it.
 
-#### 🗺️ CareMap
-
-<div align="center">
-
-<a href="https://github.com/saintvisionary/CareMap">
-  <img src="assets/card-caremap.svg" alt="CareMap" />
-</a>
-
-</div>
-
-**[CareMap](https://github.com/saintvisionary/CareMap):** *what care would cost you, before the bill.* A map of 4,500+ US hospitals and 11,200 sliding-fee clinics, priced for you under the charity-care law that applies where you live, with the math shown. 17 state laws modeled, each encoded from the statute with its citation.
-
-```mermaid
-flowchart LR
-    U["👤 You<br/>ZIP, household, income"] --> B["🔒 Browser<br/>poverty-line math,<br/>state rule"]
-    B -- "tier % only" --> A["🤖 Strands agent<br/>AWS Lambda"]
-    A --> T["🧾 Tools<br/>CMS + state law"]
-    T --> G["🛂 Grounding guard<br/><i>every $ from a tool?</i>"]
-    G -. "no: rewrite" .-> A
-    G --> R["💬 Reply + map"]
-```
-
-- **Privacy by design.** Household size and income are redacted in the browser before any network call; the agent only ever sees a tier and a ZIP.
-- **AI output is untrusted.** Strands hooks keep a ledger of every number a tool returned; a reply that states a figure not in the ledger is sent back to be rewritten.
-- **Works without the AI.** The map, prices and law math run client-side, so the app keeps working when the model is down or out of quota.
-- **Hardened endpoint.** The Lambda Function URL has a CORS allow-list, a max message length and a per-IP rate limit.
-- **Tested and accessible.** 240 tests (Python and TypeScript) and an automated WCAG 2.2 AA audit.
-
 </details>
 
 <br>
