@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/tyler-bynum-838b8132b"><img src="https://img.shields.io/badge/LinkedIn-connect-0A66C2?style=flat-square" alt="LinkedIn"></a>
   <img src="https://img.shields.io/badge/BS_IT_Management-WGU,_2025-003057?style=flat-square" alt="BS Information Technology Management, Western Governors University, 2025">
-  <img src="https://img.shields.io/badge/MS_Cybersecurity-Georgia_Tech,_2027--2028-B3A369?style=flat-square" alt="MS Cybersecurity, Georgia Tech, January 2027 to 2028, year-round">
+  <img src="https://img.shields.io/badge/MS_Cybersecurity-Georgia_Tech,_2028-B3A369?style=flat-square" alt="MS Cybersecurity, Georgia Tech, 2028">
 </p>
 
 I work on **identity**: who and what gets access, to what, for how long, and how you prove it to an auditor. Lately that means **AI agents**: giving them their own identity, a human owner, least privilege, and a full audit trail. I build the controls, then attack them, and write down every bypass I find.
@@ -99,7 +99,7 @@ flowchart LR
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg">
-  <img src="assets/stack-dark.svg" width="100%" alt="Working with: Python, TypeScript, React, AWS, Amazon Bedrock, AWS Lambda, Strands Agents, Microsoft Entra ID, Splunk, Git. Learning: Terraform, AWS IAM, Okta, PowerShell, Palantir Foundry. Certified: CompTIA Security+, GIAC GSEC, GIAC GFACT. In progress: GIAC GCIH, Microsoft SC-300. Education: BS IT Management, Western Governors University (2025); MS Cybersecurity, Georgia Tech (2027 to 2028).">
+  <img src="assets/stack-dark.svg" width="100%" alt="Working with: Python, TypeScript, React, AWS, Amazon Bedrock, AWS Lambda, Strands Agents, Microsoft Entra ID, Splunk, Git. Learning: Terraform, AWS IAM, Okta, PowerShell, Palantir Foundry. Certified: CompTIA Security+, GIAC GSEC, GIAC GFACT. In progress: GIAC GCIH, Microsoft SC-300. Education: BS IT Management, Western Governors University (2025); MS Cybersecurity, Georgia Tech (2028).">
 </picture>
 
 <p align="center"><sub>Least privilege for people, machines, and agents. 🔐</sub></p>

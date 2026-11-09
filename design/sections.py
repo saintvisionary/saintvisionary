@@ -45,7 +45,7 @@ def stack(t):
             ("LEARNING NOW", ["Terraform", "AWS IAM", "Okta", "PowerShell", "Palantir Foundry"], "soft"),
             ("CERTIFIED", ["CompTIA Security+", "GIAC GSEC", "GIAC GFACT"], "cert"),
             ("IN PROGRESS", ["GIAC GCIH", "Microsoft SC-300"], "prog"),
-            ("EDUCATION", [("BS IT Management, WGU (2025)", "cert"), ("MS Cybersecurity, Georgia Tech (2027-2028)", "prog")], "mixed")]
+            ("EDUCATION", [("BS IT Management, WGU (2025)", "cert"), ("MS Cybersecurity, Georgia Tech (2028)", "prog")], "mixed")]
     y = 34; body = ""; k = 0
     for label, items, row_kind in rows:
         body += f'<text x="40" y="{y+21}" class="lab">{label}</text>'
