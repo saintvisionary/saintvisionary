@@ -44,12 +44,14 @@ def stack(t):
     rows = [("WORKING WITH", ["Python", "TypeScript", "React", "AWS", "Amazon Bedrock", "AWS Lambda", "Strands Agents", "Microsoft Entra ID", "Splunk", "Git"], "on"),
             ("LEARNING NOW", ["Terraform", "AWS IAM", "Okta", "PowerShell", "Palantir Foundry"], "soft"),
             ("CERTIFIED", ["CompTIA Security+", "GIAC GSEC", "GIAC GFACT"], "cert"),
-            ("IN PROGRESS", ["GIAC GCIH", "Microsoft SC-300", "MS Cybersecurity, Georgia Tech (Jan 2027)"], "prog")]
+            ("IN PROGRESS", ["GIAC GCIH", "Microsoft SC-300"], "prog"),
+            ("EDUCATION", [("BS IT Management, WGU (2025)", "cert"), ("MS Cybersecurity, Georgia Tech (2027-2028)", "prog")], "mixed")]
     y = 34; body = ""; k = 0
-    for label, items, kind in rows:
+    for label, items, row_kind in rows:
         body += f'<text x="40" y="{y+21}" class="lab">{label}</text>'
         x = 210
         for it in items:
+            it, kind = it if isinstance(it, tuple) else (it, row_kind)
             w = 20 + len(it) * 7.3
             if x + w > W - 40: x = 210; y += 46
             dot = {"on": c['accent'], "soft": c['gray'], "cert": c['green'], "prog": c['gray']}[kind]
