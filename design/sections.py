@@ -43,9 +43,9 @@ def stack(t):
     c = TH[t]; W = 1200
     rows = [("WORKING WITH", ["Python", "TypeScript", "React", "AWS", "Amazon Bedrock", "AWS Lambda", "Strands Agents", "Microsoft Entra ID", "Splunk", "Git"], "on"),
             ("LEARNING NOW", ["Terraform", "AWS IAM", "Okta", "PowerShell", "Palantir Foundry"], "soft"),
-            ("CERTIFIED", ["CompTIA Security+", "GIAC GSEC", "GIAC GFACT"], "cert"),
-            ("IN PROGRESS", ["GIAC GCIH", "Microsoft SC-300"], "prog"),
-            ("EDUCATION", [("BS IT Management, WGU (2025)", "cert"), ("MS Cybersecurity, Georgia Tech (2028)", "prog")], "mixed")]
+            ("CERTIFIED", ["CompTIA Security+", "GIAC GFACT", "GIAC GSEC", "GIAC GCIH"], "cert"),
+            ("IN PROGRESS", ["Microsoft SC-300"], "prog"),
+            ("EDUCATION", [("BS IT Management, WGU (2025)", "cert"), ("SANS Cyber Academy Fellow, Cybersecurity (2026)", "cert"), ("MS Cybersecurity, Georgia Tech (2028)", "prog")], "mixed")]
     y = 34; body = ""; k = 0
     for label, items, row_kind in rows:
         body += f'<text x="40" y="{y+21}" class="lab">{label}</text>'

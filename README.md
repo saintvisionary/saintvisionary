@@ -8,6 +8,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/tyler-bynum-838b8132b"><img src="https://img.shields.io/badge/LinkedIn-connect-0A66C2?style=flat-square" alt="LinkedIn"></a>
   <img src="https://img.shields.io/badge/BS_IT_Management-WGU,_2025-003057?style=flat-square" alt="BS Information Technology Management, Western Governors University, 2025">
+  <img src="https://img.shields.io/badge/SANS_Cyber_Academy_Fellow-Cybersecurity,_2026-A6192E?style=flat-square" alt="SANS Technology Institute, Cyber Academy Fellow, Cybersecurity, 2026">
   <img src="https://img.shields.io/badge/MS_Cybersecurity-Georgia_Tech,_2028-B3A369?style=flat-square" alt="MS Cybersecurity, Georgia Tech, 2028">
 </p>
 
@@ -99,7 +100,7 @@ flowchart LR
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg">
-  <img src="assets/stack-dark.svg" width="100%" alt="Working with: Python, TypeScript, React, AWS, Amazon Bedrock, AWS Lambda, Strands Agents, Microsoft Entra ID, Splunk, Git. Learning: Terraform, AWS IAM, Okta, PowerShell, Palantir Foundry. Certified: CompTIA Security+, GIAC GSEC, GIAC GFACT. In progress: GIAC GCIH, Microsoft SC-300. Education: BS IT Management, Western Governors University (2025); MS Cybersecurity, Georgia Tech (2028).">
+  <img src="assets/stack-dark.svg" width="100%" alt="Working with: Python, TypeScript, React, AWS, Amazon Bedrock, AWS Lambda, Strands Agents, Microsoft Entra ID, Splunk, Git. Learning: Terraform, AWS IAM, Okta, PowerShell, Palantir Foundry. Certified: CompTIA Security+, GIAC GFACT, GIAC GSEC, GIAC GCIH. In progress: Microsoft SC-300. Education: BS IT Management, Western Governors University (2025); Cyber Academy Fellow, Cybersecurity, SANS Technology Institute (2026); MS Cybersecurity, Georgia Tech (2028).">
 </picture>
 
 <p align="center"><sub>Least privilege for people, machines, and agents. 🔐</sub></p>
